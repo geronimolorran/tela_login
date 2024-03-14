@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900; 1.100;1.200;1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+*{
+    box-sizing:border-box;
+    font-family: "poppins",sans-serif;
+    margin:0;
+    padding:0;
+  }
+:root{
+    --cor-fundo:#201b2c;
+    --cor-h1-direito: #00ff88;
+    --cor-h1-esquerdo:#77ffc0;
+    --cor-input:#514869;
+    --cor-sombra:#00000056;
+    --cor-btn:#00ff88;
+  }
+.login{
+     align-items: center;
+     background-color: var(--cor-fundo);
+     display: flex;
+     height: 100vh;
+     justify-content: center;
+     width: 100vw;
+   }
+.login-esquerdo{
+    align-items: column;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width:50vw;
+  }
+.login-esquerdo > h1 {
+    color:var(--cor-h1-esquerdo);
+    font-size: 3vw;
+  }
+.img-login-esquerdo{
+  width: 35vw;
+}
+.login-direito{
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width:50vw;
+}
+
+
+.login-card{
+      align-items: center;
+      background-color: #2f2841;
+      border-radius: 20px;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      padding: 30px 35px;
+      width: 60%;
+      box-shadow: 0px 10px 40px var(--cor-sombra)
+    }
+.login-card > h1{
+    color:var(--cor-h1-direito);
+    font-weight:800;
+    margin:0;
+    text-transform: uppercase;
+  }
+.textfield{
+     align-items: flex-start;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 10px 0px ;
+     width: 100%;
+   }
+    /*atacando o input*/
+.textfield > input{
+    background-color:var(--cor-input);
+    border: none;
+    border-radius: 10px ;
+    color: #f0ffff;
+    outline: none;
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0px;
+    font-size: 12pt;
+
+    /* tira a borda que parece quando clica*/
+  }
+
+.textfield > input::placeholder{
+
+  color: palegoldenrod;
+}
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+  }
+.btn-login{
+        background-color: var(--cor-btn);
+        border: none;
+        box-shadow: 0px 10px 40px -12px #00ff8052;
+        color:#2b134b;
+        font-weight: 800;
+        letter-spacing: 3px;
+        margin: 8px 0px;
+        outline: none;
+        padding: 16px 0px;
+        text-transform: uppercase;
+        width: 100%;
+        border-radius: 10px;
+        cursor:pointer;
+      } 
+   /* @media only screen and ( max-width: 950px) { */
+/* .login-card{
+   width:80% ;
+ }
+}
+@media only screen and ( max-width: 600px) { */
+ /*   .login{
+          display :flex;
+          flex-direction :column;
+          height: auto;
+        }
+    } 
+    .login-esquerdo > h1{
+      display: none;
+    }
+    .login-esquerdo{
+      width: 100%;
+      height: auto;
+      margin: 10px 0px ;
+    }
+
+    .login-direito{
+      width: 100%;
+      height: auto;
+      margin: 10px 0px ;
+    }
+  
